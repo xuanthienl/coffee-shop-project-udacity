@@ -1,6 +1,8 @@
 - CD frontend/
-- RUN: "export NODE_OPTIONS=--openssl-legacy-provider"
-- npm install sass
+    export NODE_OPTIONS=--openssl-legacy-provider
+    npm install sass
+    ionic serve
 
-python3 -m venv env
-source env/bin/activate
+- Virtual environment for MAC
+    python3 -m venv env
+    source env/bin/activate
