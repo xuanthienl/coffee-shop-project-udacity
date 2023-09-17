@@ -100,7 +100,7 @@ def createDrink(payload):
         return jsonify(
             {
                 "success": True,
-                "drinks": drink.long()
+                "drinks": [drink.long()]
             }
         )
     except Exception as e:
@@ -137,7 +137,7 @@ def updateDrink(payload, id):
         return jsonify(
             {
                 "success": True,
-                "drinks": drink.long()
+                "drinks": [drink.long()]
             }
         )
     except NoResultFound as e:
